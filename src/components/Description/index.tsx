@@ -1,6 +1,8 @@
 import useGetClassName from 'hooks/useGetClassName';
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 import { isLabelInProps } from 'utils';
+
+const [test, setTest] = useState();
 
 export type DescriptionProps = {
   children?: string | ReactElement;
@@ -26,4 +28,5 @@ const Description = ({ children, className, ...props }: DescriptionProps): React
   return children;
 };
 
+export { test, setTest }
 export default Description;
