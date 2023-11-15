@@ -7,7 +7,7 @@ const g = {} as const;
 export type TitleProps = {
   children?: string | ReactElement;
   className?: string;
-  test: typeof g;
+  test: typeof g; // PROBLEM is this line that requires `as const`
   /**
    * Default 2.
    */
