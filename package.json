@@ -12,7 +12,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "DEBUG=\"vite-plugin-dts:bundle\" vite build",
     "preview": "vite preview",
     "lint": "eslint src",
     "format:check": "prettier --check src",

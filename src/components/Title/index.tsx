@@ -2,9 +2,12 @@ import useGetClassName from 'hooks/useGetClassName';
 import { ReactElement } from 'react';
 import { isLabelInProps } from 'utils';
 
+const g = {} as const;
+
 export type TitleProps = {
   children?: string | ReactElement;
   className?: string;
+  test: typeof g;
   /**
    * Default 2.
    */
